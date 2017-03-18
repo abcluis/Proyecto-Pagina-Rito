@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Angular Rito</title>
+    <link rel="stylesheet" href="assets/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    
+</head>
+<body ng-app="main">
+    <div ui-view></div>
+    
+    
+    <!----------------Libraries Angular------------->
+    <script src="assets/lib/angular.min.js"></script>
+    <script src="assets/lib/angular-ui-router.min.js"></script>
+    
+    
+    <!-----------------Module Angular---------------->
+    <script src="app/app.js"></script>
+    
+    <!-----------------Routes Angular----------------->
+    <script src="app/routes.js"></script>
+    
+    <!-----------------Controllers Angular----------->
+    <script src="app/component/home/homeController.js"></script>
+    
+    <!------------------Services Angular ------------>
+    <script src="app/shared/champs/championsService.js"></script>
+    
+    
+</body>
+</html>

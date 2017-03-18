@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    list-style: none;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 90;
+}
+
+nav li{
+    flex: 1;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: .3s ease all;
+}
+nav li:hover{
+    transform: scale(1.1);
+    background-color: darkslategray;
+}
+nav li:last-child{
+    flex: 0;
+    background-color: white;
+    color: black;
+}
+nav li:last-child:hover{
+    flex: 2;
+}
+
+
+
