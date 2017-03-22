@@ -24,11 +24,22 @@
                 }
             },
             resolve:{
-                names:['ChampionService',function(ChampionService){
+                champions:['ChampionService',function(ChampionService){
                     return ChampionService.GetAll();
                 }]
             }
+        })
+        .state('navbar.champion-detail',{
+            url:'/champ/{id}',
+            templateUrl:'app/component/champion-detail/champion-detail.html',
+            controller:'ChampionDetailController as $ctrl',
+            resolve:{
+                championLore:['ChampionService','$stateParams',function(ChampionService,$stateParams){
+                    return ChampionService.GetChampionLoreById($stateParams.id);
+                }]
+            }
         });
+        
         
         
     }

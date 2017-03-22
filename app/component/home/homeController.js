@@ -4,12 +4,12 @@
     angular.module('main')
     .controller('HomeController',HomeController);
     
-    HomeController.$inject = ['names']
-    function HomeController(names){
-        
+    HomeController.$inject = ['champions','APIConstants']
+    function HomeController(champions,APIConstants){
         var $ctrl = this;
-        $ctrl.names = names;
-        
+        $ctrl.rootImageUrl = APIConstants.rootImageUrl;
+        console.log(champions);
+        $ctrl.champions = champions;
     }
     
 })();

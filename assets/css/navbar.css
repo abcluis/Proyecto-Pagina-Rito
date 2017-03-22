@@ -5,8 +5,8 @@ nav {
     color: white;
     justify-content: space-around;
     text-align: center;
-    border-radius: 4px;
     position: fixed;
+    height: 50px;
     width: 100%;
     top: 0;
     z-index: 90;
@@ -18,6 +18,16 @@ nav li{
     padding: 15px 20px;
     transition: .3s ease all;
 }
+nav li.active{
+    background-color: white;
+}
+nav li.active a{
+    color: black;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
 nav li:hover{
     transform: scale(1.1);
     background-color: darkslategray;
@@ -28,7 +38,25 @@ nav li:last-child{
     color: black;
 }
 nav li:last-child:hover{
-    flex: 2;
+    flex: 1;
+}
+nav li:last-child i{
+    float: right;
+}
+
+nav li:last-child .input_inline{
+    /*display: inline-block;*/
+    display:none;
+    width: 100px;
+    border: 0;
+    border-bottom: 1px solid;
+}
+nav li:last-child:hover .input_inline{
+    display: inline-block;
+    /*display:none;*/
+    width: auto;
+    border: 0;
+    border-bottom: 1px solid;
 }
 
 
